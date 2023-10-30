@@ -3,7 +3,7 @@
     padding: 0;
 }
 .centratura{
-    width: auto;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -13,11 +13,22 @@
 .centratura section{
     padding: 10px;
 }
+.speciale{
+    display: none;
+}
 
 header{
     background-color: #0084FD;
 }
-/* main */
-@media all end (min-width:1200px){
-    
+/* header */
+@media all (max-width: 1000px){
+    .centratura{
+        width: 70%;
+    }
+    .hamburghermenu{
+        display: none;
+    }
+    .speciale{
+        display: ;
+    }
 }
