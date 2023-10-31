@@ -45,8 +45,17 @@ h3{
 
 .col{
     margin-bottom: 50px;
-    background-color: #B5DDFF;
     border-radius: 10px;
+    text-align: center;
+    background-color: #b5ddff;
+}
+
+.card{
+    
+}
+
+.row{
+    padding: 10px;
 }
 
 div img{
@@ -82,7 +91,7 @@ div img{
 
     .row{
         display: flex;
-        flex-wrap:wrap ;
+        flex-wrap: wrap ;
     }
 
     .col{
@@ -90,7 +99,7 @@ div img{
     }
 
     #demo{
-        width: calc((100% / 3) * 2);
+        width: calc(((100% / 3) * 2) - 20px);
     }
     
     
