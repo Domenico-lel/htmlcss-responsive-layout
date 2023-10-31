@@ -51,7 +51,7 @@ h3{
 }
 
 .card{
-    
+    padding: 10px;
 }
 
 .row{
@@ -92,14 +92,16 @@ div img{
     .row{
         display: flex;
         flex-wrap: wrap ;
+        max-width: 80%;
+        margin: 0 auto;
     }
 
     .col{
-        width: calc(100% / 3);
+        width: calc((100% / 3) -20px );
     }
 
     #demo{
-        width: calc(((100% / 3) * 2) - 20px);
+        width: calc(((100% / 3) * 2 ) -20px );
     }
     
     
