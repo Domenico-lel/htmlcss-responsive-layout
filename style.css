@@ -22,6 +22,7 @@ header{
     background-color: #0084FD;
 }
 /* header */
+
 button{
     background-color: #0084FD;
     border-radius: 10px;
@@ -32,26 +33,24 @@ button i{
     padding-right:12px;
 }
 
-.presentazione{
-    max-width: 350px;
-    background-color: #B5DDFF;
-    border-radius: 10px;
+.conteiner{
+    width: 90%;
     margin: 0 auto;
-    height:auto;
+
 }
 h3{
     color: #0084FD;
     padding: 10px 0;
 }
 
-.cont_prese{
-    width: 90%;
-    margin: 0 auto;
-    margin-top: 15px;
+.col{
+    margin-bottom: 50px;
+    background-color: #B5DDFF;
+    border-radius: 10px;
 }
 
 div img{
-    width: 100%;
+    width: 50%;
 }
 
 @media all and (min-width: 1200px){
@@ -77,8 +76,22 @@ div img{
     }
     /* header */
 
-    .presentazione{
+    .conteiner{
+        width: 70%;
     }
 
+    .row{
+        display: flex;
+        flex-wrap:wrap ;
+    }
+
+    .col{
+        width: calc(100% / 3);
+    }
+
+    #demo{
+        width: calc((100% / 3) * 2);
+    }
+    
     
 }
