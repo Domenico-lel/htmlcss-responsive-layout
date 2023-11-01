@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'PT Sans', sans-serif;
 }
 .centratura{
@@ -23,45 +24,107 @@ header{
 }
 /* header */
 
-button{
-    background-color: #0084FD;
-    border-radius: 10px;
-    padding: 2px 50px;
-    color: #fff;
-}
-button i{
-    padding-right:12px;
-}
-
-.conteiner{
-    width: 90%;
+.container {
+    max-width: 1170px;
     margin: 0 auto;
-
-}
-h3{
-    color: #0084FD;
-    padding: 10px 0;
 }
 
-.col{
-    margin-bottom: 50px;
-    border-radius: 10px;
-    text-align: center;
+.space {
+    padding: 0 2rem;
+}
+
+.store {
+    padding: 8px;
+    border-radius: 30px;
+}
+
+.col {
     background-color: #b5ddff;
+    margin-top: 2rem;
+    border-radius: 30px;
 }
 
-.card{
-    padding: 10px;
+img {
+    width: 100%;
+    display: block;
 }
 
-.row{
-    padding: 10px;
+.align {
+    text-align: center;
 }
 
-div img{
-    width: 50%;
+h2 {
+    font-size: 40px;
 }
 
+main .space {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+ .top-left .card {
+    padding-top: 25px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.card h4 {
+    font-size: 25px;
+    color: #1990fd;
+}
+
+.card p {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    color: #5d7284;
+    font-weight: 600;
+    line-height: 27px;
+    font-size: 17px;
+}
+
+.app-left span {
+    background-color: #0084fd;
+    color: white;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.app-right {
+    margin-top: 2rem;
+}
+
+.align i {
+    font-size: 80px;
+    color: #1990fd;
+    padding: 2rem 0;
+}
+
+/* tablet */
+@media all and (min-width: 768px) {
+    /* first section media */
+    .row {
+        display: flex;
+    } 
+
+    .col {
+        width: calc(100% / 3);
+        margin: 10px;
+    }
+
+    .top-left {
+        width: calc((100% / 3) * 2);
+    }
+
+    .app-right {
+        width: 50%;
+    }
+}
+
+
+/* desktop */
 @media all and (min-width: 1200px){
     .centratura{
         max-width: 90%;
@@ -82,26 +145,17 @@ div img{
         background-color: #fff;
         color: black;
         padding:2px 15px;
+        border-radius: 30px;
+        border: 0px;    
     }
     /* header */
 
-    .conteiner{
-        width: 70%;
-    }
-
-    .row{
+    .top-left .card {
         display: flex;
-        flex-wrap: wrap ;
-        max-width: 80%;
-        margin: 0 auto;
     }
 
-    .col{
-        width: calc((100% / 3) -20px );
-    }
-
-    #demo{
-        width: calc(((100% / 3) * 2 ) -20px );
+    .app-right {
+        width: 100%;
     }
     
     
